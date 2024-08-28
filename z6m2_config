@@ -59,8 +59,8 @@ END
 Label: Camera Date and Time
 Readonly: 0
 Type: DATE
-Current: 1722520264
-Printable: Thu 01 Aug 2024 15:51:04 CEST
+Current: 1722439813
+Printable: Wed 31 Jul 2024 17:30:13 CEST
 Help: Use 'now' as the current time when setting.
 
 END
@@ -150,7 +150,7 @@ END
 Label: Serial Number
 Readonly: 1
 Type: TEXT
-Current: 00000000000000000000000006011278
+Current: 00000000000000000000000006085745
 END
 /main/status/manufacturer
 Label: Camera Manufacturer
@@ -168,7 +168,7 @@ END
 Label: Device Version
 Readonly: 1
 Type: TEXT
-Current: V1.62
+Current: V1.50
 END
 /main/status/vendorextension
 Label: Vendor Extension
@@ -180,7 +180,7 @@ END
 Label: External Flash
 Readonly: 1
 Type: RADIO
-Current: Off
+Current: On
 Choice: 0 On
 Choice: 1 Off
 END
@@ -188,7 +188,7 @@ END
 Label: Battery Level
 Readonly: 1
 Type: TEXT
-Current: 80%
+Current: 100%
 END
 /main/status/continousshootingcount
 Label: Continuous Shooting Count
@@ -213,13 +213,13 @@ END
 Label: Camera Orientation
 Readonly: 1
 Type: TEXT
-Current: 3'
+Current: 2'
 END
 /main/status/activefolder
 Label: Active Folder
 Readonly: 1
 Type: RANGE
-Current: 102
+Current: 100
 Bottom: 100
 Top: 999
 Step: 1
@@ -228,7 +228,7 @@ END
 Label: Available Shots
 Readonly: 1
 Type: RANGE
-Current: 7332
+Current: 1827
 Bottom: 0
 Top: 4.29497e+09
 Step: 1
@@ -243,19 +243,19 @@ END
 Label: Focal Length Maximum
 Readonly: 1
 Type: TEXT
-Current: 24 mm
+Current: 50 mm
 END
 /main/status/apertureatminfocallength
 Label: Maximum Aperture at Focal Length Minimum
 Readonly: 1
 Type: TEXT
-Current: 2
+Current: 4
 END
 /main/status/apertureatmaxfocallength
 Label: Maximum Aperture at Focal Length Maximum
 Readonly: 1
 Type: TEXT
-Current: 2
+Current: 6
 END
 /main/status/lowlight
 Label: Low Light
@@ -270,7 +270,7 @@ END
 Label: Light Meter
 Readonly: 1
 Type: RANGE
-Current: -52
+Current: -10
 Bottom: -60
 Top: 60
 Step: 1
@@ -333,7 +333,7 @@ END
 Label: ISO Speed
 Readonly: 0
 Type: RADIO
-Current: 200
+Current: 1600
 Choice: 0 50
 Choice: 1 64
 Choice: 2 80
@@ -370,7 +370,7 @@ END
 Label: Movie ISO Speed
 Readonly: 0
 Type: RADIO
-Current: 400
+Current: 100
 Choice: 0 100
 Choice: 1 125
 Choice: 2 160
@@ -424,7 +424,7 @@ END
 Label: WhiteBalance
 Readonly: 0
 Type: RADIO
-Current: Cloudy
+Current: Automatic
 Choice: 0 Automatic
 Choice: 1 Daylight
 Choice: 2 Fluorescent
@@ -467,7 +467,7 @@ END
 Label: Continuous Shooting Speed Slow
 Readonly: 0
 Type: RADIO
-Current: 2 fps
+Current: 3 fps
 Choice: 0 3 fps
 Choice: 1 2 fps
 Choice: 2 1 fps
@@ -507,9 +507,9 @@ Readonly: 0
 Type: RADIO
 Current: 0
 Choice: 0 0
-Choice: 1 512
-Choice: 2 1024
-Choice: 3 2048
+Choice: 1 640
+Choice: 2 1280
+Choice: 3 2560
 END
 /main/capturesettings/longexpnr
 Label: Long Exp Noise Reduction
@@ -523,7 +523,7 @@ END
 Label: Exposure Compensation
 Readonly: 0
 Type: RADIO
-Current: 0
+Current: -0.333
 Choice: 0 -5
 Choice: 1 -4.666
 Choice: 2 -4.333
@@ -604,26 +604,22 @@ Label: F-Number
 Readonly: 0
 Type: RADIO
 Current: f/8
-Choice: 0 f/1.8
-Choice: 1 f/2
-Choice: 2 f/2.2
-Choice: 3 f/2.5
-Choice: 4 f/2.8
-Choice: 5 f/3.2
-Choice: 6 f/3.5
-Choice: 7 f/4
-Choice: 8 f/4.5
-Choice: 9 f/5
-Choice: 10 f/5.6
-Choice: 11 f/6.3
-Choice: 12 f/7.1
-Choice: 13 f/8
-Choice: 14 f/9
-Choice: 15 f/10
-Choice: 16 f/11
-Choice: 17 f/13
-Choice: 18 f/14
-Choice: 19 f/16
+Choice: 0 f/5
+Choice: 1 f/5.6
+Choice: 2 f/6.3
+Choice: 3 f/7.1
+Choice: 4 f/8
+Choice: 5 f/9
+Choice: 6 f/10
+Choice: 7 f/11
+Choice: 8 f/13
+Choice: 9 f/14
+Choice: 10 f/16
+Choice: 11 f/18
+Choice: 12 f/20
+Choice: 13 f/22
+Choice: 14 f/25
+Choice: 15 f/29
 END
 /main/capturesettings/movief-number
 Label: Movie F-Number
@@ -645,9 +641,9 @@ END
 Label: Focal Length
 Readonly: 1
 Type: RANGE
-Current: 24
+Current: 35
 Bottom: 24
-Top: 24
+Top: 50
 Step: 0.01
 END
 /main/capturesettings/focusmode
@@ -658,7 +654,7 @@ Current: AF-S
 Choice: 0 Manual
 Choice: 1 AF-S
 Choice: 2 AF-C
-Choice: 3 Unknown value 8013
+Choice: 3 AF-F
 END
 /main/capturesettings/expprogram
 Label: Exposure Program
@@ -720,7 +716,7 @@ END
 Label: Shutter Speed
 Readonly: 0
 Type: RADIO
-Current: 0.0050s
+Current: 0.0003s
 Choice: 0 0.0001s
 Choice: 1 0.0002s
 Choice: 2 0.0003s
@@ -781,7 +777,7 @@ END
 Label: Shutter Speed 2
 Readonly: 0
 Type: RADIO
-Current: 1/200
+Current: 1/3200
 Choice: 0 1/8000
 Choice: 1 1/6400
 Choice: 2 1/5000
@@ -845,7 +841,7 @@ END
 Label: Movie Shutter Speed 2
 Readonly: 1
 Type: RADIO
-Current: 1/25
+Current: 1/60
 Choice: 0 1/8000
 Choice: 1 1/6400
 Choice: 2 1/5000
@@ -868,10 +864,6 @@ Choice: 18 1/125
 Choice: 19 1/100
 Choice: 20 1/80
 Choice: 21 1/60
-Choice: 22 1/50
-Choice: 23 1/40
-Choice: 24 1/30
-Choice: 25 1/25
 END
 /main/capturesettings/liveviewaffocus
 Label: Live View AF Focus
@@ -894,7 +886,7 @@ END
 Label: Flash Exposure Compensation
 Readonly: 0
 Type: RANGE
-Current: -0.333333
+Current: 0
 Bottom: -3
 Top: 1
 Step: 0.333333
@@ -1144,7 +1136,7 @@ Choice: 2 Medium sensitivity
 END
 /main/capturesettings/autodistortioncontrol
 Label: Auto Distortion Control
-Readonly: 0
+Readonly: 1
 Type: RADIO
 Current: On
 Choice: 0 On
@@ -1162,7 +1154,7 @@ END
 Label: Battery Level
 Readonly: 1
 Type: MENU
-Current: 80
+Current: 100
 Choice: 0 1
 Choice: 1 2
 Choice: 2 3
@@ -1296,7 +1288,7 @@ END
 Label: White Balance
 Readonly: 0
 Type: MENU
-Current: 32784
+Current: 2
 Choice: 0 2
 Choice: 1 4
 Choice: 2 5
@@ -1313,33 +1305,31 @@ Label: F-Number
 Readonly: 0
 Type: MENU
 Current: 800
-Choice: 0 180
-Choice: 1 200
-Choice: 2 220
-Choice: 3 250
-Choice: 4 280
-Choice: 5 320
-Choice: 6 350
-Choice: 7 400
-Choice: 8 450
-Choice: 9 500
-Choice: 10 560
-Choice: 11 630
-Choice: 12 710
-Choice: 13 800
-Choice: 14 900
-Choice: 15 1000
-Choice: 16 1100
-Choice: 17 1300
-Choice: 18 1400
-Choice: 19 1600
+Choice: 0 500
+Choice: 1 560
+Choice: 2 630
+Choice: 3 710
+Choice: 4 800
+Choice: 5 900
+Choice: 6 1000
+Choice: 7 1100
+Choice: 8 1300
+Choice: 9 1400
+Choice: 10 1600
+Choice: 11 1800
+Choice: 12 2000
+Choice: 13 2200
+Choice: 14 2500
+Choice: 15 2900
 END
 /main/other/5008
 Label: Focal Length
 Readonly: 1
-Type: MENU
-Current: 2400
-Choice: 0 2400
+Type: RANGE
+Current: 3500
+Bottom: 2400
+Top: 5000
+Step: 1
 END
 /main/other/500a
 Label: Focus Mode
@@ -1375,7 +1365,7 @@ END
 Label: Exposure Time
 Readonly: 0
 Type: MENU
-Current: 50
+Current: 3
 Choice: 0 1
 Choice: 1 2
 Choice: 2 3
@@ -1450,7 +1440,7 @@ END
 Label: Exposure Index (film speed ISO)
 Readonly: 0
 Type: MENU
-Current: 200
+Current: 1600
 Choice: 0 50
 Choice: 1 64
 Choice: 2 80
@@ -1487,7 +1477,7 @@ END
 Label: Exposure Bias Compensation
 Readonly: 0
 Type: MENU
-Current: 0
+Current: -333
 Choice: 0 -5000
 Choice: 1 -4666
 Choice: 2 -4333
@@ -1524,7 +1514,7 @@ END
 Label: Date & Time
 Readonly: 0
 Type: TEXT
-Current: 20240801T155104
+Current: 20240731T173013
 END
 /main/other/5013
 Label: Still Capture Mode
@@ -1893,7 +1883,7 @@ END
 Label: PTP_DPC_NIKON_A1AFCModePriority
 Readonly: 0
 Type: MENU
-Current: 0
+Current: 3
 Choice: 0 0
 Choice: 1 3
 END
@@ -1901,7 +1891,7 @@ END
 Label: PTP_DPC_NIKON_A2AFSModePriority
 Readonly: 0
 Type: MENU
-Current: 0
+Current: 3
 Choice: 0 0
 Choice: 1 3
 END
@@ -1998,7 +1988,7 @@ END
 Label: Live View AF Area
 Readonly: 0
 Type: MENU
-Current: 32794
+Current: 32800
 Choice: 0 32784
 Choice: 1 32785
 Choice: 2 32791
@@ -2022,13 +2012,13 @@ END
 Label: Angle Level
 Readonly: 1
 Type: TEXT
-Current: 203378
+Current: 150621
 END
 /main/other/d068
 Label: Shooting Speed
 Readonly: 0
 Type: MENU
-Current: 2
+Current: 1
 Choice: 0 1
 Choice: 1 2
 Choice: 2 3
@@ -2098,7 +2088,7 @@ END
 Label: Flash Sync. Speed
 Readonly: 0
 Type: MENU
-Current: 65736
+Current: -2147417912
 Choice: 0 -2147417912
 Choice: 1 65736
 Choice: 2 65696
@@ -2166,7 +2156,7 @@ END
 Label: AngleLevelPitching
 Readonly: 1
 Type: TEXT
-Current: 23463771
+Current: 22690983
 END
 /main/other/d07e
 Label: AngleLevelYawing
@@ -2250,7 +2240,7 @@ END
 Label: Movie Screen Size
 Readonly: 0
 Type: MENU
-Current: 540436593850712064
+Current: 540436593853071360
 Choice: 0 1080873187702210560
 Choice: 1 1080873187701555200
 Choice: 2 1080873187700244480
@@ -2395,7 +2385,7 @@ END
 Label: ExposureIndexEx
 Readonly: 0
 Type: MENU
-Current: 200
+Current: 1600
 Choice: 0 50
 Choice: 1 64
 Choice: 2 80
@@ -2436,7 +2426,7 @@ END
 Label: ISOControlSensitivity
 Readonly: 1
 Type: TEXT
-Current: 20000
+Current: 1600
 END
 /main/other/d0b6
 Label: RawImageSize
@@ -2473,11 +2463,10 @@ Choice: 1 1
 END
 /main/other/d0bc
 Label: MovieAutoDistortion
-Readonly: 0
+Readonly: 1
 Type: MENU
 Current: 1
-Choice: 0 0
-Choice: 1 1
+Choice: 0 1
 END
 /main/other/d0bd
 Label: PTP Property 0xd0bd
@@ -2609,7 +2598,7 @@ END
 Label: Lens ID
 Readonly: 1
 Type: TEXT
-Current: 3841
+Current: 22
 END
 /main/other/d0e1
 Label: Lens Sort
@@ -2635,25 +2624,25 @@ END
 Label: Max. Focal Length
 Readonly: 1
 Type: TEXT
-Current: 2400
+Current: 5000
 END
 /main/other/d0e5
 Label: Max. Aperture at Min. Focal Length
 Readonly: 1
 Type: TEXT
-Current: 180
+Current: 400
 END
 /main/other/d0e6
 Label: Max. Aperture at Max. Focal Length
 Readonly: 1
 Type: TEXT
-Current: 180
+Current: 630
 END
 /main/other/d0e7
 Label: LensTypeML
 Readonly: 1
 Type: TEXT
-Current: 64
+Current: 128
 END
 /main/other/d0f7
 Label: Vignette Control
@@ -2667,11 +2656,10 @@ Choice: 3 4
 END
 /main/other/d0f8
 Label: Auto Distortion Control
-Readonly: 0
+Readonly: 1
 Type: MENU
 Current: 1
-Choice: 0 0
-Choice: 1 1
+Choice: 0 1
 END
 /main/other/d0fc
 Label: UserMode
@@ -2688,7 +2676,7 @@ END
 Label: Nikon Exposure Time
 Readonly: 0
 Type: MENU
-Current: 65736
+Current: 68736
 Choice: 0 73536
 Choice: 1 71936
 Choice: 2 70536
@@ -2850,7 +2838,7 @@ END
 Label: External Flash Attached
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 1
 Choice: 0 0
 Choice: 1 1
 END
@@ -2858,7 +2846,7 @@ END
 Label: External Flash Status
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 1
 Choice: 0 0
 Choice: 1 1
 END
@@ -2866,7 +2854,7 @@ END
 Label: External Flash Sort
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 2
 Choice: 0 0
 Choice: 1 2
 Choice: 2 3
@@ -2932,7 +2920,7 @@ END
 Label: Flash Exposure Compensation
 Readonly: 0
 Type: RANGE
-Current: -2
+Current: 0
 Bottom: -18
 Top: 6
 Step: 2
@@ -2941,7 +2929,7 @@ END
 Label: ExternalFlashMultiFlashMode
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 1
 Choice: 0 0
 Choice: 1 1
 END
@@ -3003,7 +2991,7 @@ END
 Label: WBAutoType
 Readonly: 0
 Type: MENU
-Current: 2
+Current: 0
 Choice: 0 0
 Choice: 1 1
 Choice: 2 2
@@ -3145,7 +3133,7 @@ END
 Label: PrimarySlot
 Readonly: 0
 Type: MENU
-Current: 2
+Current: 1
 Choice: 0 1
 Choice: 1 2
 END
@@ -3177,7 +3165,7 @@ END
 Label: ActiveFolder
 Readonly: 1
 Type: RANGE
-Current: 102
+Current: 100
 Bottom: 100
 Top: 999
 Step: 1
@@ -3277,7 +3265,7 @@ END
 Label: LowLightAF
 Readonly: 0
 Type: MENU
-Current: 0
+Current: 1
 Choice: 0 0
 Choice: 1 1
 END
@@ -3331,7 +3319,7 @@ END
 Label: ISO Auto High Limit
 Readonly: 0
 Type: MENU
-Current: 20000
+Current: 25600
 Choice: 0 200
 Choice: 1 250
 Choice: 2 320
@@ -3440,7 +3428,7 @@ END
 Label: MovieShutterSpeed
 Readonly: 1
 Type: MENU
-Current: 65561
+Current: 65596
 Choice: 0 73536
 Choice: 1 71936
 Choice: 2 70536
@@ -3463,10 +3451,6 @@ Choice: 18 65661
 Choice: 19 65636
 Choice: 20 65616
 Choice: 21 65596
-Choice: 22 65586
-Choice: 23 65576
-Choice: 24 65566
-Choice: 25 65561
 END
 /main/other/d1a9
 Label: MovieFNumber
@@ -3479,7 +3463,7 @@ END
 Label: MovieISO
 Readonly: 0
 Type: MENU
-Current: 400
+Current: 100
 Choice: 0 100
 Choice: 1 125
 Choice: 2 160
@@ -3578,7 +3562,7 @@ END
 Label: Exposure Indicate Status
 Readonly: 1
 Type: MENU
-Current: -52
+Current: -10
 Choice: 0 -60
 Choice: 1 -59
 Choice: 2 -58
@@ -3825,9 +3809,9 @@ Readonly: 0
 Type: MENU
 Current: 0
 Choice: 0 0
-Choice: 1 512
-Choice: 2 1024
-Choice: 3 2048
+Choice: 1 640
+Choice: 2 1280
+Choice: 3 2560
 END
 /main/other/d1c5
 Label: PTP Property 0xd1c5
@@ -3863,13 +3847,20 @@ END
 Label: SBWirelessMode
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 2
+Choice: 0 0
+Choice: 1 1
+Choice: 2 2
+Choice: 3 3
 END
 /main/other/d1e3
 Label: SBWirelessMultipleFlashMode
 Readonly: 1
 Type: MENU
 Current: 0
+Choice: 0 0
+Choice: 1 1
+Choice: 2 2
 END
 /main/other/d1e4
 Label: SBUsableGroup
@@ -3933,7 +3924,7 @@ END
 Label: SBIntegrationFlashReady
 Readonly: 1
 Type: MENU
-Current: 0
+Current: 1
 Choice: 0 0
 Choice: 1 1
 END
@@ -3941,7 +3932,7 @@ END
 Label: ExposureRemaining
 Readonly: 1
 Type: RANGE
-Current: 7332
+Current: 1827
 Bottom: 0
 Top: 4.29497e+09
 Step: 1
@@ -3985,7 +3976,7 @@ END
 Label: MovieVibrationReduction
 Readonly: 0
 Type: MENU
-Current: 1
+Current: 100
 Choice: 0 0
 Choice: 1 1
 Choice: 2 2
@@ -4044,7 +4035,7 @@ END
 Label: Active Pic Ctrl Item
 Readonly: 0
 Type: MENU
-Current: 8
+Current: 1
 Choice: 0 1
 Choice: 1 2
 Choice: 2 3
@@ -4503,7 +4494,7 @@ END
 Label: MovieWhiteBalance
 Readonly: 0
 Type: MENU
-Current: 2
+Current: 32789
 Choice: 0 2
 Choice: 1 4
 Choice: 2 5
@@ -4519,7 +4510,7 @@ END
 Label: MovieActiveDLighting
 Readonly: 0
 Type: MENU
-Current: 2
+Current: 0
 Choice: 0 0
 Choice: 1 2
 Choice: 2 3
